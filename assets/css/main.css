@@ -1,0 +1,699 @@
+@font-face{
+    font-family: 'Signatrust';
+    src: url('../fonts/Signatrust.ttf');
+}
+
+@font-face{
+    font-family: 'Lato';
+    font-weight: normal;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Lato';
+    font-weight: bold;
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+.signature-text{
+    font-family: 'Signatrust', sans-serif !important;
+}
+
+.index-header{
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5px 7vw;
+    color: #c4c4c4;
+    font-size: 12px;
+    margin: 0;
+}
+
+.index-header p{
+    margin: 0;
+}
+
+.index-header-contact{
+    display: flex;
+}
+
+.index-header-contact-item{
+    margin-right: 15px;
+}
+
+.index-header svg{
+    width:12px;
+    height: 14px;
+    margin: 0 5px;
+}
+
+.index-header-contact-item, .index-header-socials{
+    display: flex;
+}
+
+.index-header-socials svg{
+    margin: 0 10px;
+}
+
+.index-nav-section{
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding-bottom: 19px;
+}
+
+.index-logo{
+    width: 100px;
+    height: 85px;
+    padding: 20px 0;
+}
+
+.index-nav-link{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    padding: 0 5px 17px;
+    margin: 0 20px;
+}
+
+.index-nav-link:hover, a.active{
+    border-bottom: 2px solid #000000;
+}
+
+.index-nav-link:last-of-type{
+    margin: 0 10px;
+}
+
+.index-nav-link svg{
+    width: 12px;
+    height: 12px;
+    fill: #000000;
+}
+
+.index-showcase{
+    width:100%;
+    height: 450px;
+}
+
+.index-showcase-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.index-showcase-img, .index-showcase-info{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.index-showcase-img{
+    z-index: 2;
+}
+
+.index-showcase-info{
+    z-index: 3;
+    text-align: center;
+    padding: 70px 0 10px;
+    color: #ffffff;
+    font-size: 12px;
+
+}
+
+.index-showcase-info p, .index-showcase-info a{
+    text-transform: uppercase;
+}
+
+
+.index-showcase-info h3{
+    font-size: 80px;
+    margin: 30px 0 10px;
+}
+
+.index-showcase-info a{
+    display: block;
+    color: #ffffff !important;
+    width:fit-content;
+    padding: 15px 30px;
+    background: orange;
+    margin: 0 auto;
+}
+
+.index-about{
+    text-align: center;
+    padding: 0 0 50px;
+}
+
+.index-section-intro{
+    font-size: 12px;
+    text-align: center;
+    padding: 80px 0 0;
+    margin: 0;
+}
+
+.index-section-header{
+    font-size: 50px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.index-about p{
+    font-size: 16px;
+    line-height: 140%;
+    width: 45%;
+    min-width: 280px;
+    margin: 20px auto;
+}
+
+.index-three-split{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10vw 70px;
+}
+
+.index-three-split-item{
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+}
+
+.index-about-images{
+    height: 300px;
+}
+
+.index-about-images img{
+    opacity: .5;
+}
+
+.index-about-images img:hover{
+    opacity: 1;
+}
+
+.index-about-perks-row{
+    display: flex;
+    padding: 10px 11vw;
+}
+
+.index-about-perks-item{
+    width: 29%;
+    margin: 2%;
+    display: flex;
+}
+
+.index-about-perks-item svg{
+    width: 15%;
+    height: 30px;
+    margin-right: 5%;  
+}
+
+.index-about-perks-item-info{
+    width: 80%;
+    text-align: left;
+}
+
+.index-about-perks-item-info h4{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.index-about-perks-item-info p{
+    font-size: 12px;
+    line-height: 140%;
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+}
+
+.index-rooms, .index-news{
+    background: rgba(196, 196, 196, .1);
+}
+
+.index-room-cards{
+    height: 450px;
+}
+
+.index-room-card{
+    background: #ffffff;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0 2px 5px -2px rgba(0,0,0,.1);
+}
+
+.index-room-card img{
+    height: 50%;
+    width: 100%;
+}
+
+.index-room-card h4{
+    font-weight: bold;
+    margin: 20px 0 5px;
+    font-size: 16px;
+}
+
+.index-room-card svg{
+    transform: rotate(180deg);
+    width: 50px;
+    height: 30px;
+}
+
+.index-room-card p{
+    line-height: 140%;
+    font-size: 12px;
+    padding: 5px 20px 20px;
+    margin: 0;
+}
+
+.index-room-card a{
+    color: orange;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.index-testimonials, .index-contact, .index-footer{
+    background: #000000;
+    color:#ffffff;
+}
+
+.index-testimonial-card{
+    background: #ffffff;
+    border-radius: 5px;
+    height: 250px;
+    color: #000000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.index-testimonial-card span{
+    font-size: 100px;
+    transform: rotate(180deg);
+    display: block;
+    margin-left: -55px;
+    height: 50px;
+}
+.index-testimonial-card p{
+    padding: 10px 30px;
+    font-size: 12px;
+}
+
+.index-testimonial-card img{
+    border-radius: 50%;
+    border: 2px solid orange;
+    padding: 2px;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.index-testimonial-card h4{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.index-testimonial-card p:last-of-type{
+    padding: 5px 20px;
+}
+
+.index-news-card{
+    background: #ffffff;
+    padding: 30px;
+    color: #000000;
+    text-align: left;
+    font-size: 12px;
+    height: 230px;
+}
+
+.index-news-card div{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+}
+
+.index-news-card a{
+    color: orange;
+    margin-left: 3px;
+}
+
+.index-news-card h4{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0 15px;
+}
+
+.index-news-card hr{
+    border: 1px solid rgba(196, 196, 196, .4);
+    margin: 20px 0;
+}
+
+.index-news-card img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.index-contact{
+    position: relative;
+    height: 500px;
+}
+
+.index-contact-cards{
+    position: absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
+    height: 200px;
+    top: 250px;
+}
+
+.index-contact-card{
+    background: #ffffff;
+    width: 32%;
+    margin: 0.05%;
+    padding: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.index-contact-card:first-of-type{
+    margin-left: 1%
+}
+.index-contact-card:last-of-type{
+    margin-right: 1%
+}
+
+.index-contact-card svg{
+    width: 40px;
+    height: 40px;
+    margin: 20px 0;
+}
+
+.index-contact-card h4{
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.index-contact-card p{
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.index-contact-card a{
+    margin: 20px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: orange;
+}
+
+.index-contact img{
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+}
+
+.index-footer{
+    margin-top: 140px
+}
+
+.index-footer-info{
+    padding: 60px 10vw 0;
+    display: flex;
+}
+
+.index-footer-info-item{
+    width: 23%;
+    margin: 1%;
+    font-size: 12px;
+    text-align: left;
+}
+
+.index-footer-info-item h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}    
+
+.index-footer-info-item p{
+    margin: 0 0 10px;
+}
+
+.index-footer-info-item span.index-footer-small{
+    opacity: .5;
+    font-size: 10px;
+    position: relative;
+    top: -8px;
+}
+
+.index-footer-bold{
+    font-weight: bold;
+}
+
+.index-footer-info-item svg{
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.index-footer-info-item hr{
+    margin: 10px 0;
+    border: 1px solid rgba(196, 196, 196, .4);
+}
+
+.footer-subscribe-form{
+    display: flex;
+    margin: 10px 0;
+}
+
+.footer-subscribe-form-email, .footer-subscribe-form-submit{
+    background: #000000;
+    color: #ffffff;
+    font-family: inherit;
+    padding: 5px;
+    border: none;
+}
+
+.footer-subscribe-form-email{
+    width: 80%;
+    font-size: 12px;
+}
+
+.footer-subscribe-form-submit{
+    width: 20%;
+    font-size: 20px;
+    transform: rotateY(180deg);
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer-socials svg{
+    fill: orange !important;
+    height: 13px;
+    width: 13px;
+    margin-right: 20px;
+}
+
+.index-footer-copyright{
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid rgba(196, 196, 196, .4);
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 950px){
+    .index-three-split{
+        flex-wrap: wrap;
+    }
+
+    .index-three-split-item{
+        min-width: 220px;
+        margin-top: 10px;
+    }
+
+    .index-contact{
+        height: 700px;
+    }
+
+    .index-contact img{
+        margin-top: 400px;
+    }
+
+    .index-contact-card:last-of-type {
+        margin-top: 0.3%;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 878px){
+    .index-header{
+        font-size: 10px;
+        padding: 7.5px 1vw;
+    }
+
+    .index-header svg{
+        width: 10px;
+        height: 12px;
+    }
+
+    .index-about-images{
+        height: 250px;
+        margin-bottom: 250px;
+    }
+
+    .index-rooms{
+        padding-bottom: 450px;
+    }
+
+    .index-showcase-info h3 {
+        font-size: 60px;
+    }
+    .index-footer-info {
+        padding: 60px 4vw 0;
+    }
+}
+
+@media screen and (max-width: 712px){
+    .index-header{
+        flex-wrap: wrap;
+    }
+    .index-header-contact {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .index-header-contact-item{
+        width: fit-content;
+        margin-right: 0;
+    }
+
+    .index-header-socials{
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .index-showcase-info a {
+        transform: scale(.8);
+    }
+
+    .index-showcase{
+        height: 375px;
+    }
+
+    .index-contact-card{
+        margin: 0;
+        margin-top:0.3%;
+    }
+    .index-contact {
+        height: 880px;
+    }
+
+    .index-contact-card:first-of-type{
+        margin-left: 0;
+    }
+
+    .index-contact img {
+        margin-top: 650px;
+        height: 200px;
+    }
+
+
+
+    .index-about-perks-row{
+        flex-wrap: wrap;
+        padding: 0px 11vw;
+    }
+
+    .index-about-perks-item{
+        width: 100%;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .index-about-perks-item svg{
+        width: 100%;
+        height: 50px;
+    }
+
+    .index-about-perks-item-info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .index-footer-info{
+        flex-wrap: wrap;
+    }
+
+    .index-footer-info-item {
+        width: 48%;
+        margin: 1% 1% 50px;
+    }
+
+}
+@media screen and (max-width: 572px){
+    .index-about-images{
+        margin-bottom: 500px;
+    }
+
+    .index-about p{
+        width: 80%;
+    }
+
+    .index-rooms{
+        padding-bottom: 900px;
+    }
+
+    .index-section-header{
+        font-size: 40px;
+    }
+
+    .index-contact-card {
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+
+    .index-header {
+        font-size: 7.7px;
+    }
+
+    .index-nav-link{
+        font-size: 10px;
+        padding: 0 5px 18px;
+    }
+    .index-showcase-info h3 {
+        font-size: 45px;
+    }
+
+    .index-footer-info-item {
+        width: 100%;
+        margin: 0 0 50px;
+    }
+}
+
+
+
+
