@@ -15,6 +15,11 @@
     src: url('../fonts/Lato/Lato-Bold.ttf');
 }
 
+@font-face{
+    font-family: 'HerrVonMuellerhoff';
+    src: url('../fonts/herr-von-muellerhoff/HerrVonMuellerhoff-Regular.ttf');
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -31,7 +36,7 @@ p, h1, h2, h3, h4, h5{
 }
 
 .signature-text{
-    font-family: 'Signatrust', sans-serif !important;
+    font-family: 'HerrVonMuellerhoff', sans-serif !important;
 }
 
 .index-header{
@@ -450,7 +455,7 @@ p, h1, h2, h3, h4, h5{
 
 .index-contact img{
     width: 100%;
-    height: 250px;
+    height: 270px;
     margin-top: 200px;
 }
 
@@ -693,7 +698,7 @@ p, h1, h2, h3, h4, h5{
 
     .index-contact img {
         margin-top: 650px;
-        height: 200px;
+        height: 210px;
     }
 
 
