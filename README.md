@@ -1,1 +1,1 @@
-# Valada
+# Valada hotels
