@@ -183,7 +183,7 @@ p, h1, h2, h3, h4, h5{
 .index-about p{
     font-size: 16px;
     line-height: 140%;
-    width: 45%;
+    width: 50%;
     min-width: 280px;
     margin: 20px auto;
 }
@@ -248,11 +248,81 @@ p, h1, h2, h3, h4, h5{
     min-width: 100%;
 }
 
+.index-grey-back{
+    background: rgba(196, 196, 196, .1);
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.index-grey-back h3{
+    font-size: 90px;
+}
+
+.index-about-footer-text{
+    margin-top: 90px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.index-about-dropout{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 2px 5px -2px rgba(0,0,0,.1);
+    width: 60%;
+    min-width: 250px;
+    padding: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.index-about-dropout select{
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    text-align: left;
+    width: 50%;
+    outline: none;
+}
+
+.index-about-dropout select:focus{
+    outline: none;
+}
+
+.index-about-dropout select option{
+    font-weight: normal;
+}
+
+.index-about-dropout p{
+    font-size: 30px;
+    text-align: left;
+    width: 50%;
+    margin: 0;
+}
+
+.index-about-dropout hr{
+    border: 0.6px solid #000000;
+    width: calc(50% - 50px);
+    position: absolute;
+    bottom: 55px; 
+    left: 50px;
+}
+
+.index-white-back{
+    background: #ffffff !important;
+}
+
 .index-rooms, .index-news{
     background: rgba(196, 196, 196, .1);
 }
 
-.index-room-cards, .index-testimonial-cards, .index-news-cards{
+.index-room-cards, .index-testimonial-cards, .index-news-cards, .rooms-room-cards{
     width: 80vw !important;
 }
 
@@ -608,6 +678,20 @@ p, h1, h2, h3, h4, h5{
     border: .1px solid orange;
 }
 
+.rooms-room-cards{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10vw 70px;
+    flex-wrap: wrap;
+}
+
+.rooms-room-cards-item{
+    width: 31%;
+    min-width: 280px;
+    height: 450px;
+    margin: 50px 1%;
+}
+
 @media screen and (max-width: 950px){
     .index-three-split{
         flex-wrap: wrap;
@@ -732,6 +816,33 @@ p, h1, h2, h3, h4, h5{
     .index-footer-info-item {
         width: 48%;
         margin: 1% 1% 50px;
+    }
+
+    .index-about-dropout{
+        justify-content: center;
+    }
+    
+    .index-about-dropout select{
+        text-align: center;
+        width: 80%;
+        font-size: 20px;
+    }
+    
+    .index-about-dropout p{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .index-about-dropout hr{
+        width: calc(80% - 50px);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .index-grey-back h3{
+        font-size: 60px;
     }
 
 }
