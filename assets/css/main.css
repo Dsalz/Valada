@@ -27,6 +27,10 @@ body{
     background: #ffffff;
 }
 
+.black-back{
+    background: #000000;
+}
+
 a{
     text-decoration: none;
 }
@@ -254,8 +258,15 @@ p, h1, h2, h3, h4, h5{
     margin-bottom: 120px;
 }
 
-.index-grey-back h3{
+.standalone-header{
     font-size: 90px;
+}
+
+.standalone-desc{
+    opacity: .5;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
 }
 
 .index-about-footer-text{
@@ -692,6 +703,14 @@ p, h1, h2, h3, h4, h5{
     margin: 50px 1%;
 }
 
+.standalone-contact > div{
+    margin-top: 100px;
+}
+
+.standalone-contact-footer{
+    margin-top: 250px;
+}
+
 @media screen and (max-width: 950px){
     .index-three-split{
         flex-wrap: wrap;
@@ -845,6 +864,17 @@ p, h1, h2, h3, h4, h5{
         font-size: 60px;
     }
 
+    .standalone-header{
+        font-size: 60px;
+    }
+
+    .standalone-desc{
+        width: 80%;
+    }
+
+    .standalone-contact > div {
+        margin-top: 70px;
+    }
 }
 @media screen and (max-width: 572px){
     .index-about-images{
@@ -861,6 +891,10 @@ p, h1, h2, h3, h4, h5{
 
     .index-contact-card {
         padding: 15px;
+    }
+
+    .standalone-header{
+        font-size: 60px;
     }
 }
 
