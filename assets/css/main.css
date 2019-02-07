@@ -4,15 +4,15 @@
 }
 
 @font-face{
-    font-family: 'Lato';
+    font-family: 'Montserrat';
     font-weight: normal;
-    src: url('../fonts/Lato/Lato-Regular.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
 }
 
 @font-face{
-    font-family: 'Lato';
+    font-family: 'Montserrat';
     font-weight: bold;
-    src: url('../fonts/Lato/Lato-Bold.ttf');
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
 }
 
 @font-face{
@@ -23,8 +23,12 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: #ffffff;
+}
+
+.black-back{
+    background: #000000;
 }
 
 a{
@@ -208,6 +212,14 @@ p, h1, h2, h3, h4, h5{
     opacity: .5;
 }
 
+img.perks-show{
+    opacity: 1;
+}
+
+.index-about-images img:hover img.perks-show{
+    opacity: .5;
+}
+
 .index-about-images img:hover{
     opacity: 1;
 }
@@ -251,16 +263,21 @@ p, h1, h2, h3, h4, h5{
 .index-grey-back{
     background: rgba(196, 196, 196, .1);
     position: relative;
-    margin-bottom: 120px;
 }
 
-.index-grey-back h3{
+.standalone-header{
     font-size: 90px;
+}
+
+.standalone-desc{
+    opacity: .5;
+    text-align: center;
+    width: 50%;
+    margin: 10px auto;
 }
 
 .index-about-footer-text{
     margin-top: 90px;
-    margin-bottom: 70px;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
@@ -282,36 +299,79 @@ p, h1, h2, h3, h4, h5{
     justify-content: flex-start;
 }
 
-.index-about-dropout select{
+.index-about-dropout-option{
+    width: 28%;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 0.6px solid rgba(0,0,0,.5);
+    text-align: left;
+    position: relative;
+}
+
+.index-about-dropout-option:nth-of-type(2){
+    margin: 0 8%;
+}
+
+.index-about-dropout-option:hover {
+    border-color: #000000;
+}
+
+.index-about-dropout-option:hover .index-about-dropout-option-btns{
+    display: flex;
+}
+
+.index-about-dropout-option span:last-of-type{
+    opacity: .5;
+}
+
+.index-about-dropout-option-btns{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    padding-bottom: 10px;
+}
+
+.index-about-dropout-option-btns button{
+    border: 3px solid rgba(0,0,0,.3);
+    border-radius: 50%;
+    font-size: 24px;
+    background: transparent;
+    color: rgba(0,0,0,.3);
+    cursor: pointer;
+    outline: none;
+}
+
+.index-about-dropout-option-btns button:last-of-type{
+    margin-left: 5%;
+}
+
+.index-about-dropout-option select{
     border: none;
     background: transparent;
     font-size: 30px;
     text-align: left;
-    width: 50%;
     outline: none;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
 }
 
-.index-about-dropout select:focus{
-    outline: none;
-}
-
-.index-about-dropout select option{
-    font-weight: normal;
-}
-
-.index-about-dropout p{
-    font-size: 30px;
-    text-align: left;
-    width: 50%;
-    margin: 0;
-}
-
-.index-about-dropout hr{
-    border: 0.6px solid #000000;
-    width: calc(50% - 50px);
+.index-about-dropout-option select::after{
+    content: "T";
     position: absolute;
-    bottom: 55px; 
-    left: 50px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.index-about-dropout-option select:focus{
+    outline: none;
+}
+
+.index-about-dropout-option select option{
+    font-weight: normal;
 }
 
 .index-white-back{
@@ -688,8 +748,25 @@ p, h1, h2, h3, h4, h5{
 .rooms-room-cards-item{
     width: 31%;
     min-width: 280px;
-    height: 450px;
+    height: 500px;
     margin: 50px 1%;
+}
+
+.standalone-contact > div{
+    margin-top: 100px;
+}
+
+.standalone-contact-footer{
+    margin-top: 250px;
+}
+
+.orange-btn{
+    display: block;
+    color: #ffffff !important;
+    width: fit-content;
+    padding: 15px 30px;
+    background: orange;
+    margin: 0 auto!important;
 }
 
 @media screen and (max-width: 950px){
@@ -845,6 +922,17 @@ p, h1, h2, h3, h4, h5{
         font-size: 60px;
     }
 
+    .standalone-header{
+        font-size: 60px;
+    }
+
+    .standalone-desc{
+        width: 80%;
+    }
+
+    .standalone-contact > div {
+        margin-top: 70px;
+    }
 }
 @media screen and (max-width: 572px){
     .index-about-images{
@@ -861,6 +949,10 @@ p, h1, h2, h3, h4, h5{
 
     .index-contact-card {
         padding: 15px;
+    }
+
+    .standalone-header{
+        font-size: 60px;
     }
 }
 
