@@ -185,7 +185,7 @@ p, h1, h2, h3, h4, h5{
 }
 
 .index-about p{
-    font-size: 16px;
+    font-size: 13px;
     line-height: 140%;
     width: 50%;
     min-width: 280px;
@@ -210,18 +210,22 @@ p, h1, h2, h3, h4, h5{
 
 .index-about-images img{
     opacity: .5;
+    transition: all ease-in-out 1s;
 }
 
 img.perks-show{
     opacity: 1;
+    transition: all ease-in-out 1s;
 }
 
 .index-about-images img:hover img.perks-show{
     opacity: .5;
+    transition: all ease-in-out 1s;
 }
 
 .index-about-images img:hover{
     opacity: 1;
+    transition: all ease-in-out 1s;
 }
 
 .index-about-perks-row{
