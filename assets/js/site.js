@@ -19,7 +19,7 @@ let perkInterval;
 
 const startPerkShowcase = () => {
     document.querySelector('#perk-1').classList.add('perks-show');
-    perkInterval = setInterval(toggleShownPerkImages, 1000);
+    perkInterval = setInterval(toggleShownPerkImages, 4000);
 }
 
 const stopPerkShowcase = () => {
