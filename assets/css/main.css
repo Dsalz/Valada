@@ -6,13 +6,13 @@
 @font-face{
     font-family: 'Montserrat';
     font-weight: normal;
-    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 @font-face{
     font-family: 'Montserrat';
     font-weight: bold;
-    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
+    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
 }
 
 @font-face{
@@ -544,7 +544,7 @@ img.perks-show{
     left:0;
     right:0;
     margin: 0 auto;
-    height: 200px;
+    height: 250px;
     top: 250px;
 }
 
@@ -784,11 +784,11 @@ img.perks-show{
     }
 
     .index-contact{
-        height: 700px;
+        height: 800px;
     }
 
     .index-contact img{
-        margin-top: 400px;
+        margin-top: 500px;
     }
 
     .index-contact-card:last-of-type {
@@ -855,7 +855,7 @@ img.perks-show{
         margin-top:0.3%;
     }
     .index-contact {
-        height: 880px;
+        height: 1080px;
     }
 
     .index-contact-card:first-of-type{
@@ -863,7 +863,7 @@ img.perks-show{
     }
 
     .index-contact img {
-        margin-top: 650px;
+        margin-top: 850px;
         height: 210px;
     }
 
