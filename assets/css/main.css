@@ -12,7 +12,7 @@
 @font-face{
     font-family: 'Montserrat';
     font-weight: bold;
-    src: url('../fonts/Montserrat/Montserrat-Medium.ttf');
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.ttf');
 }
 
 @font-face{
@@ -28,7 +28,15 @@ body{
 }
 
 .black-back{
-    background: #000000;
+    background: #282828;
+}
+
+p {
+    opacity: .5;
+    line-height: 150%;
+}
+.index-header p{
+    opacity: 1 !important;
 }
 
 a{
@@ -45,7 +53,7 @@ p, h1, h2, h3, h4, h5{
 }
 
 .index-header{
-    background: #000000;
+    background: #282828;
     display: flex;
     justify-content: space-between;
     padding: 7.5px 7vw;
@@ -96,13 +104,13 @@ p, h1, h2, h3, h4, h5{
 .index-nav-link{
     font-size: 12px;
     font-weight: bold;
-    color: #000000;
+    color: #282828;
     padding: 0 5px 17px;
     margin: 0 20px;
 }
 
 .index-nav-link:hover, a.active{
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #282828;
 }
 
 .index-nav-link:last-of-type{
@@ -112,7 +120,7 @@ p, h1, h2, h3, h4, h5{
 .index-nav-link svg{
     width: 12px;
     height: 12px;
-    fill: #000000;
+    fill: #282828;
 }
 
 .index-showcase{
@@ -124,6 +132,14 @@ p, h1, h2, h3, h4, h5{
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.index-showcase-item:first-of-type{
+    background: #bf9958;
+}
+
+.index-showcase-item:first-of-type img{
+    opacity: .5;
 }
 
 .index-showcase-img, .index-showcase-info{
@@ -149,6 +165,8 @@ p, h1, h2, h3, h4, h5{
 
 .index-showcase-info p, .index-showcase-info a{
     text-transform: uppercase;
+    opacity: 1 !important;
+    font-weight: bold;
 }
 
 
@@ -162,7 +180,7 @@ p, h1, h2, h3, h4, h5{
     color: #ffffff !important;
     width:fit-content;
     padding: 15px 30px;
-    background: orange;
+    background: #bf9958;
     margin: 0 auto;
 }
 
@@ -187,7 +205,7 @@ p, h1, h2, h3, h4, h5{
 .index-about p{
     font-size: 13px;
     line-height: 140%;
-    width: 50%;
+    width: 40%;
     min-width: 280px;
     margin: 20px auto;
 }
@@ -239,8 +257,9 @@ img.perks-show{
     display: flex;
 }
 
-.index-about-perks-item svg{
+.index-about-perks-item img, .index-about-perks-item svg{
     width: 15%;
+    max-width: 30px;
     height: 30px;
     margin-right: 5%;  
 }
@@ -265,7 +284,7 @@ img.perks-show{
 }
 
 .index-grey-back{
-    background: rgba(196, 196, 196, .1);
+    background: #f9f8f7;
     position: relative;
 }
 
@@ -317,7 +336,7 @@ img.perks-show{
 }
 
 .index-about-dropout-option:hover {
-    border-color: #000000;
+    border-color: #282828;
 }
 
 .index-about-dropout-option:hover .index-about-dropout-option-btns{
@@ -383,7 +402,7 @@ img.perks-show{
 }
 
 .index-rooms, .index-news{
-    background: rgba(196, 196, 196, .1);
+    background: #f9f8f7;
 }
 
 .index-room-cards, .index-testimonial-cards, .index-news-cards, .rooms-room-cards{
@@ -393,9 +412,9 @@ img.perks-show{
 .index-room-card{
     background: #ffffff;
     text-align: center;
-    color: #000000;
+    color: #282828;
     box-shadow: 0 2px 5px -2px rgba(0,0,0,.1);
-    height: 450px;
+    height: 550px;
 }
 
 .index-room-card img{
@@ -423,7 +442,7 @@ img.perks-show{
 }
 
 .index-room-card a{
-    color: orange;
+    color: #bf9958;
     margin: 0 0 20px;
     text-transform: uppercase;
     font-size: 12px;
@@ -431,7 +450,7 @@ img.perks-show{
 }
 
 .index-testimonials, .index-contact, .index-footer{
-    background: #000000;
+    background: #282828;
     color:#ffffff;
 }
 
@@ -439,7 +458,7 @@ img.perks-show{
     background: #ffffff;
     border-radius: 5px;
     height: 250px;
-    color: #000000;
+    color: #282828;
     padding: 40px 0;
     text-align: center;
     position: relative;
@@ -467,7 +486,7 @@ img.perks-show{
 
 .index-testimonial-card img{
     border-radius: 50%;
-    border: 2px solid orange;
+    border: 2px solid #bf9958;
     padding: 2px;
     margin: 10px;
     height: 50px;
@@ -486,7 +505,7 @@ img.perks-show{
 .index-news-card{
     background: #ffffff;
     padding: 30px;
-    color: #000000;
+    color: #282828;
     text-align: left;
     font-size: 12px;
     height: 250px;
@@ -512,7 +531,7 @@ img.perks-show{
     
 
 .index-news-card a{
-    color: orange;
+    color: #bf9958;
     margin-left: 3px;
 }
 
@@ -554,7 +573,7 @@ img.perks-show{
     margin: 0.05%;
     padding: 30px;
     text-align: center;
-    color: #000000;
+    color: #282828;
 }
 
 .index-contact-card:first-of-type{
@@ -585,7 +604,7 @@ img.perks-show{
     margin: 20px 0;
     font-size: 12px;
     text-transform: uppercase;
-    color: orange;
+    color: #bf9958;
 }
 
 .index-contact img{
@@ -652,7 +671,7 @@ img.perks-show{
     background: #000000;
     color: #ffffff;
     font-family: inherit;
-    padding: 5px;
+    padding: 5px 10px;
     border: none;
 }
 
@@ -670,7 +689,7 @@ img.perks-show{
 }
 
 .footer-socials svg{
-    fill: orange !important;
+    fill: #bf9958 !important;
     height: 13px;
     width: 13px;
     margin-right: 20px;
@@ -684,7 +703,11 @@ img.perks-show{
 }
 
 .index-footer-copyright a{
-    color: orange;
+    color: #bf9958;
+}
+
+.index-footer-copyright p {
+    opacity: 1;
 }
 
 .glide, .glide__track, .glide__slides{
@@ -730,16 +753,16 @@ img.perks-show{
 }
 
 .colored-bullets > .glide__bullet--active{
-    background-color: orange !important;
+    background-color: #bf9958 !important;
 }
 
 .colored-bullets > .glide__bullet{
-    border: .1px solid orange;
+    border: .1px solid #bf9958;
 }
 
 .colored-bullets > .glide__bullet:hover, .colored-bullets > .glide__bullet:focus{
-    background-color: orange !important;
-    border: .1px solid orange;
+    background-color: #bf9958 !important;
+    border: .1px solid #bf9958;
 }
 
 .rooms-room-cards{
@@ -752,7 +775,7 @@ img.perks-show{
 .rooms-room-cards-item{
     width: 31%;
     min-width: 280px;
-    height: 500px;
+    height: 600px;
     margin: 50px 1%;
 }
 
@@ -769,7 +792,7 @@ img.perks-show{
     color: #ffffff !important;
     width: fit-content;
     padding: 15px 30px;
-    background: orange;
+    background: #bf9958;
     margin: 0 auto!important;
 }
 
@@ -799,6 +822,11 @@ img.perks-show{
 }
 
 @media screen and (max-width: 878px){
+
+    .index-room-card{
+        height: 600px;
+    }
+
     .index-header{
         font-size: 10px;
         padding: 7.5px 1vw;
@@ -823,6 +851,7 @@ img.perks-show{
 }
 
 @media screen and (max-width: 712px){
+
     .index-header{
         flex-wrap: wrap;
     }
@@ -880,7 +909,9 @@ img.perks-show{
         flex-wrap: wrap;
     }
 
-    .index-about-perks-item svg{
+    .index-about-perks-item img, .index-about-perks-item svg{
+        max-width: 50px;
+        margin: 0 auto;
         width: 100%;
         height: 50px;
     }
