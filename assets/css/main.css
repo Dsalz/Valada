@@ -415,6 +415,7 @@ img.perks-show{
     color: #282828;
     box-shadow: 0 2px 5px -2px rgba(0,0,0,.1);
     height: 550px;
+    position: relative;
 }
 
 .index-room-card img{
@@ -447,6 +448,10 @@ img.perks-show{
     text-transform: uppercase;
     font-size: 12px;
     font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
 }
 
 .index-testimonials, .index-contact, .index-footer{
