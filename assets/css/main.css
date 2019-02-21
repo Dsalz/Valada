@@ -134,11 +134,11 @@ p, h1, h2, h3, h4, h5{
     position: relative;
 }
 
-.index-showcase-item:first-of-type{
-    background: #bf9958;
+.index-showcase-item{
+    background: #312002;
 }
 
-.index-showcase-item:first-of-type img{
+.index-showcase-item img{
     opacity: .5;
 }
 
@@ -800,6 +800,18 @@ img.perks-show{
     background: #bf9958;
     margin: 0 auto!important;
 }
+
+.eapps-instagram-feed-container{
+    margin-bottom: 80px;
+}
+
+.eapps-instagram-feed-title-visible{
+    opacity: 0 !important;
+}
+
+/* .index-news a:last-of-type{
+    display: none !important;
+} */
 
 @media screen and (max-width: 950px){
     .index-three-split{

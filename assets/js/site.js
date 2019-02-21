@@ -1,9 +1,9 @@
 new Glide('.glide').mount();
-new Glide('.glide-rooms').mount();
+// new Glide('.glide-rooms').mount();
 new Glide('.glide-testimonials').mount();
-new Glide('.glide-news').mount();
+// new Glide('.glide-news').mount();
 
-let currShownPerkNo = 1;
+let currShownPerkNo = 2;
 
 const showPerkImg = (id) => {
     document.querySelector('.perks-show').classList.remove('perks-show');
@@ -35,4 +35,6 @@ for(let perkImage of allPerkImages){
     perkImage.addEventListener('mouseover', stopPerkShowcase);
     perkImage.addEventListener('mouseout', startPerkShowcase);
 }
+
+setTimeout( () => document.querySelector('.eapps-widget-toolbar').nextSibling.style.display = 'none' , 4000);
 
