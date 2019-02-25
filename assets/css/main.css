@@ -136,6 +136,7 @@ p, h1, h2, h3, h4, h5{
 
 .index-showcase-item{
     background: #312002;
+    overflow: hidden;
 }
 
 .index-showcase-item img{
@@ -152,6 +153,7 @@ p, h1, h2, h3, h4, h5{
 
 .index-showcase-img{
     z-index: 2;
+    /* min-width: 1024px; */
 }
 
 .index-showcase-info{
@@ -218,6 +220,7 @@ p, h1, h2, h3, h4, h5{
 
 .index-three-split-item{
     width: 30%;
+    min-width: 280px;
     height: 100%;
     margin: 1%;
 }
@@ -745,12 +748,12 @@ img.perks-show{
 }
 
 .glide__arrow--left{
-    left: 0.5em;
+    left: 0.3em;
     /* transform: rotate(-90deg); */
 }
 
 .glide__arrow--right{
-    right: 0.5em;
+    right: 0.3em;
     /* transform: rotate(90deg); */
 }
 
@@ -822,12 +825,15 @@ img.perks-show{
 } */
 
 @media screen and (max-width: 950px){
+    .index-about-images{
+        margin-bottom: 250px;
+    }
     .index-three-split{
         flex-wrap: wrap;
     }
 
     .index-three-split-item{
-        min-width: 220px;
+        /* min-width: 350px; */
         margin-top: 10px;
     }
 
@@ -847,7 +853,13 @@ img.perks-show{
 }
 
 @media screen and (max-width: 878px){
+    /* .index-showcase-img{
+        left: -100px;
+    }
 
+    .index-showcase-img:nth-of-type(3){
+        left: -300px;
+    } */
     .index-room-card{
         height: 600px;
     }
@@ -864,7 +876,7 @@ img.perks-show{
 
     .index-about-images{
         height: 250px;
-        margin-bottom: 250px;
+        /* margin-bottom: 300px; */
     }
 
     .index-showcase-info h3 {
@@ -875,8 +887,20 @@ img.perks-show{
     }
 }
 
-@media screen and (max-width: 712px){
+@media screen and (max-width: 730px){
+    .index-showcase-info{
+        padding: 30px 0 0px;
+        font-size: 10px;
+    }
 
+    .index-showcase-info h3 {
+        margin: 15px 0 0px;
+        font-size: 40px;
+    }
+    .index-three-split-item{
+        min-width: 60%;
+        margin: 5px 0;
+    }
     .index-header{
         flex-wrap: wrap;
     }
@@ -901,7 +925,7 @@ img.perks-show{
     }
 
     .index-showcase{
-        height: 375px;
+        height: 250px;
     }
 
     .index-contact-card{
@@ -921,7 +945,9 @@ img.perks-show{
         height: 210px;
     }
 
-
+    .index-about-images{
+        margin-bottom: 500px;
+    }
 
     .index-about-perks-row{
         flex-wrap: wrap;
@@ -995,6 +1021,12 @@ img.perks-show{
     }
 }
 @media screen and (max-width: 572px){
+    .index-showcase{
+        height: 210px;
+    }
+    .index-three-split-item{
+        min-width: 90%;
+    }
     .index-about-images{
         margin-bottom: 500px;
     }
@@ -1016,9 +1048,7 @@ img.perks-show{
     }
 }
 
-
 @media screen and (max-width: 400px){
-
     .index-header {
         font-size: 7.7px;
     }
