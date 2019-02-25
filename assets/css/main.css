@@ -888,6 +888,13 @@ img.perks-show{
 }
 
 @media screen and (max-width: 730px){
+    .glide__arrow{
+        top: 30%;
+    }
+
+    .glide__bullets{
+        bottom: 1em;
+    }
     .index-showcase-info{
         padding: 30px 0 0px;
         font-size: 10px;
