@@ -36,5 +36,6 @@ for(let perkImage of allPerkImages){
     perkImage.addEventListener('mouseout', startPerkShowcase);
 }
 
-setTimeout( () => document.querySelector('.eapps-widget-toolbar').nextSibling.style.display = 'none' , 4000);
+const hideInstaWidgetInterval = setInterval( () => document.querySelector('.eapps-widget-toolbar').nextSibling.style.display = 'none' , 2000);
 
+setTimeout(() => clearInterval(hideInstaWidgetInterval), 15000);
