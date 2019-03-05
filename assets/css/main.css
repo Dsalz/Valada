@@ -415,6 +415,8 @@ img.perks-show{
 .index-news > iframe {
     width: 100% !important;
     height: 40vw !important;
+    /* max-height: 300px !important; */
+    margin-bottom: 15px !important;
 }
 
 .index-room-cards, .index-testimonial-cards, .index-news-cards, .rooms-room-cards{
